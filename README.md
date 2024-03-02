@@ -28,11 +28,15 @@
 
 # construct utils.py
 
-# WorkFlows
+# reaseach
+- 01_data_ingestion.ipynb
+-02_prepare_base_model.ipynb
+
+# WorkFlows in each research ipynb file
 - Update config.yaml
 - Update secrets.yaml [Optional] (use for userid or password)
 - Update params.yaml  (define model related parameter)
-- Update the entity    ()
+- Update the entity    
 - Update the configuration manager in src config
 - Update the components (use for data-ingestion, model trainig, model evolution)
 - Update the pipeline
