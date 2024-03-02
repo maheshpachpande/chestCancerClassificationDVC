@@ -28,4 +28,15 @@
 
 # construct utils.py
 
-# 
+# WorkFlows
+- Update config.yaml
+- Update secrets.yaml [Optional] (use for userid or password)
+- Update params.yaml  (define model related parameter)
+- Update the entity    ()
+- Update the configuration manager in src config
+- Update the components (use for data-ingestion, model trainig, model evolution)
+- Update the pipeline
+- Update the main.py
+- Update the dvc.yaml
+
+#

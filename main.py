@@ -1,4 +1,14 @@
-from chestCancerClassifierDVC import logger  # no need to mention exact location becoz code in __init__.py
+from chestCancerClassifierDVC import logger
+from chestCancerClassifierDVC.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+
+STAGE_NAME = "Data Ingestion stage"
 
 
-logger.info("Welcome")
+try:
+    logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<")
+    obj = DataIngestionTrainingPipeline()
+    obj.main()
+    logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
